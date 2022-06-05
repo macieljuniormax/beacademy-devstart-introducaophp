@@ -22,6 +22,8 @@ $bandas = [
         echo "<tr>";
           foreach ($banda as $info) {
             echo "<td>{$info}</td>";
+            echo "<td>{$info}</td>";
+            echo "<td>{$info}</td>";
           }
         echo "<tr>";
       }

@@ -8,5 +8,5 @@ if ($numero > 0) {
   echo "Não é positivo";
 }
 
-echo "<br> Pronto, finalizado!!!"
-; ?>
+echo "<br> Pronto, finalizado!!!";
+?>

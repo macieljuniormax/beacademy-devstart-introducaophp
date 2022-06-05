@@ -11,4 +11,4 @@ $frutas = ["Laranja",       //0
       echo "<li>{$frutas[$i]}</li>";
     }
   ?>
-</ul>
+</ul

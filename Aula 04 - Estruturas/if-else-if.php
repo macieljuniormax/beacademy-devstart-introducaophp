@@ -13,4 +13,3 @@ if ($numero > 0) {
 }
 
 echo "<br> Pronto, finalizado!!!";
-?>

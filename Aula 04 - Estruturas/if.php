@@ -6,5 +6,5 @@ if ($numero > 0) {
   echo "Positivo";
 }
 
-echo "<br> Pronto, finalizado!!!";
-?>
+echo "<br> Pronto, finalizado!!!"
+; ?>

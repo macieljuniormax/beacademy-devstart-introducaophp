@@ -1,15 +1,15 @@
 <h1>Cadastro</h1>
 <hr>
 
-<form action="">
+<form action="" method="POST">
   <label for="nome">Nome</label>
-  <input class="form-control mb-3" type="text" placeholder="E-mail" id="nome" name="nome"> 
+  <input class="form-control mb-3" type="text" placeholder="Digite seu nome" id="nome" name="nome"> 
 
   <label for="email">E-mail</label>
-  <input class="form-control mb-3" type="email" placeholder="E-mail" id="email" name="email"> 
+  <input class="form-control mb-3" type="email" placeholder="Digite seu e-mail" id="email" name="email"> 
   
-  <label for="password">Senha</label>
-  <input class="form-control mb-3" type="password" placeholder="E-mail" id="password" name="password"> 
+  <label for="telefone">Telefone</label>
+  <input class="form-control mb-3" type="tel" placeholder="Digite seu telefone" id="telefone" name="telefone"> 
 
   <button class="btn btn-primary">Enviar</button>
 </form>

@@ -17,6 +17,7 @@ function cadastro()
 
 function listar()
 {
+  $contatos = file('dados/contatos.csv');
   include "telas/listar.php";
 }
 

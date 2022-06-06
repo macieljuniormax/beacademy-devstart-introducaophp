@@ -13,6 +13,7 @@
     '/cadastro' => cadastro(),
     '/listar' => listar(),
     '/relatorio' => relatorio(),
+    '/editar' => editar(),
     '/excluir' => excluir(),
     default => erro404(),
   }

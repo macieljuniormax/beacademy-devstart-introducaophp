@@ -20,8 +20,12 @@ function cadastro()
     $arquivo = fopen("dados/contatos.csv", "a+");
     fwrite($arquivo, "{$nome};{$email};{$telefone}" . PHP_EOL);
     fclose($arquivo);
+
+    $mensagem = "Contato cadastrado com sucesso!";
+    include "telas/mensagem.php";
   }
-  echo "Contato cadastrado com sucesso!";
+  
+
   include "telas/cadastro.php";
 }
 
@@ -41,5 +45,19 @@ function erro404()
   include "telas/404.php";
 }
 
+function excluir()
+{
+  $id = $_GET["id"];
+  $contatos = file("dados/contatos.csv");
+  unset($contatos[$id]);
+  unlink("dados/contatos.csv");
 
-?>
+  $arquivo = fopen("dados/contatos.csv", "a+");
+
+  foreach ($contatos as $contato) {
+    fwrite($arquivo, $contato);
+  }
+
+  $mensagem = "Contato excluído com sucesso!";
+  include "telas/mensagem.php"; 
+}
